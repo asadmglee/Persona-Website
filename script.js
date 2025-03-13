@@ -1,0 +1,9 @@
+function showAlert() {
+    alert("This is a project description alert!");
+}
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert("Thank you for your message!");
+    this.reset(); // Reset the form after submission
+});
