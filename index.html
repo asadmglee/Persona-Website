@@ -3,65 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Interactive Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <h1 class="fade-in">Welcome to Asad Muhammad's Website</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
+    
+    <section id="home" class="hero">
+        <h2 id="animated-text">Experience the Magic of Web Effects</h2>
+    </section>
+    
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites.</p>
+        <h2>About Asad Muhammad</h2>
+        <p><strong>Location:</strong> Augsburg, Germany (Originally from Mandi Bahauddin, Pakistan)</p>
+        <p><strong>Age:</strong> 35</p>
+        <p><strong>Family:</strong> Married with three kids (an older son in kindergarten, a small daughter, and a newborn son)</p>
+        <p><strong>Profession:</strong> System Administrator at Network Funtime Company</p>
+        <p><strong>Skills:</strong> Web Development, UI/UX Design, Mobile App Development (React Native, Flutter, Generative AI)</p>
+        <p><strong>Work Environment:</strong> Cloud-based services, Slack communication, diverse team collaboration</p>
     </section>
-
-    <section id="portfolio">
-        <h2>My Portfolio</h2>
-        <div class="portfolio-item" onclick="showAlert()">
-            <h3>Project 1: Portfolio Website</h3>
-            <img src="https://via.placeholder.com/150" alt="Project 1 Screenshot">
-            <p>A personal portfolio website to showcase my work and skills.</p>
-            <a href="https://example.com/project1" target="_blank">View Project</a>
-        </div>
-        <div class="portfolio-item" onclick="showAlert()">
-            <h3>Project 2: E-commerce Store</h3>
-            <img src="https://via.placeholder.com/150" alt="Project 2 Screenshot">
-            <p>An e-commerce platform built with React and Node.js.</p>
-            <a href="https://example.com/project2" target="_blank">View Project</a>
-        </div>
-        <div class="portfolio-item" onclick="showAlert()">
-            <h3>Project 3: Blogging Platform</h3>
-            <img src="https://via.placeholder.com/150" alt="Project 3 Screenshot">
-            <p>A blogging platform where users can create and share their articles.</p>
-            <a href="https://example.com/project3" target="_blank">View Project</a>
-        </div>
+    
+    <section id="services" class="cards">
+        <div class="card">Web Development</div>
+        <div class="card">UI/UX Design</div>
+        <div class="card">SEO Optimization</div>
+        <div class="card">Mobile App Development</div>
     </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    
+    <section id="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <p><strong>Outdoor Activities:</strong> Loves driving, camping, and exploring mountains</p>
+        <p><strong>Entertainment:</strong> Enjoys TV series like Yellowstone</p>
+        <p><strong>Personal Style:</strong> Interested in unique polarized sunglasses and long-lasting men's fragrances</p>
     </section>
-
+    
+    <section id="lifestyle">
+        <h2>Lifestyle & Goals</h2>
+        <p><strong>Fitness:</strong> Currently at 91 kg, working on improving body shape, goes to the gym three days a week</p>
+        <p><strong>Travel:</strong> Enjoys road trips with family; plans include Venice, Lucerne, and Matera, Italy</p>
+        <p><strong>Business Aspirations:</strong> Interested in opening a Pakistani-Indian grocery shop in München</p>
+    </section>
+    
     <footer>
-        <p>&copy; 2023 My Personal Website</p>
+        <p>&copy; 2025 Asad Muhammad. All Rights Reserved.</p>
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
