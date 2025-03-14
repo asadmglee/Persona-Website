@@ -3,61 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Website</title>
+    <title>Asad Muhammad - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+
+    <!-- Navigation -->
     <header>
-        <h1 class="fade-in">Welcome to Asad Muhammad's Website</h1>
         <nav>
-            <ul>
+            <h2 class="logo">Asad Muhammad</h2>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <h2 id="animated-text">Experience the Magic of Web Effects</h2>
+        <div class="hero-text">
+            <h1>Hi, I'm Asad Muhammad</h1>
+            <p>Web Developer | UI/UX Designer | Tech Enthusiast</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
     </section>
-    
+
+    <!-- About Section -->
     <section id="about">
-        <h2>About Asad Muhammad</h2>
-        <p><strong>Location:</strong> Augsburg, Germany (Originally from Mandi Bahauddin, Pakistan)</p>
-        <p><strong>Age:</strong> 35</p>
-        <p><strong>Family:</strong> Married with three kids (an older son in kindergarten, a small daughter, and a newborn son)</p>
-        <p><strong>Profession:</strong> System Administrator at Network Funtime Company</p>
-        <p><strong>Skills:</strong> Web Development, UI/UX Design, Mobile App Development (React Native, Flutter, Generative AI)</p>
-        <p><strong>Work Environment:</strong> Cloud-based services, Slack communication, diverse team collaboration</p>
+        <h2>About Me</h2>
+        <p>I'm a <strong>System Administrator</strong> based in <strong>Augsburg, Germany</strong>, originally from Mandi Bahauddin, Pakistan. Passionate about technology, I specialize in <strong>web development, UI/UX design, and mobile app development</strong>.</p>
     </section>
-    
-    <section id="services" class="cards">
-        <div class="card">Web Development</div>
-        <div class="card">UI/UX Design</div>
-        <div class="card">SEO Optimization</div>
-        <div class="card">Mobile App Development</div>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="service-card">Web Development</div>
+            <div class="service-card">UI/UX Design</div>
+            <div class="service-card">SEO Optimization</div>
+            <div class="service-card">Mobile App Development</div>
+        </div>
     </section>
-    
+
+    <!-- Hobbies Section -->
     <section id="hobbies">
         <h2>Hobbies & Interests</h2>
-        <p><strong>Outdoor Activities:</strong> Loves driving, camping, and exploring mountains</p>
-        <p><strong>Entertainment:</strong> Enjoys TV series like Yellowstone</p>
-        <p><strong>Personal Style:</strong> Interested in unique polarized sunglasses and long-lasting men's fragrances</p>
+        <div class="hobby-container">
+            <div class="hobby-card">🚗 Driving</div>
+            <div class="hobby-card">🏕️ Camping</div>
+            <div class="hobby-card">🏔️ Exploring Mountains</div>
+            <div class="hobby-card">📺 Watching Yellowstone</div>
+        </div>
     </section>
-    
-    <section id="lifestyle">
-        <h2>Lifestyle & Goals</h2>
-        <p><strong>Fitness:</strong> Currently at 91 kg, working on improving body shape, goes to the gym three days a week</p>
-        <p><strong>Travel:</strong> Enjoys road trips with family; plans include Venice, Lucerne, and Matera, Italy</p>
-        <p><strong>Business Aspirations:</strong> Interested in opening a Pakistani-Indian grocery shop in München</p>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:asadmglee@gmail.com">asadmglee@gmail.com</a></p>
+        <p>Location: Augsburg, Germany</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 Asad Muhammad. All Rights Reserved.</p>
     </footer>
-    
-    <script src="script.js"></script>
+
 </body>
 </html>

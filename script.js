@@ -1,27 +1,15 @@
-// Smooth Scrolling Effect for Navigation
-document.querySelectorAll('nav ul li a').forEach(anchor => {
+// Smooth Scrolling for Navigation
+document.querySelectorAll('.nav-links a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        document.getElementById(targetId).scrollIntoView({
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
 
-// Hover Effect on Cards
-document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('mouseover', () => {
-        card.style.background = '#ff7e5f';
-        card.style.color = 'white';
-    });
-    card.addEventListener('mouseout', () => {
-        card.style.background = 'white';
-        card.style.color = 'black';
-    });
+// Contact Form Submission
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you! Your message has been sent.');
 });
-
-// Welcome Alert
-window.onload = function() {
-    alert("Welcome to Asad Muhammad's Interactive Website!");
-};
